@@ -35,7 +35,6 @@
         <Button android:id="@+id/btn6" android:layout_width="100dp" android:layout_height="100dp" android:textSize="36sp" />
         <Button android:id="@+id/btn7" android:layout_width="100dp" android:layout_height="100dp" android:textSize="36sp" />
         <Button android:id="@+id/btn8" android:layout_width="100dp" android:layout_height="100dp" android:textSize="36sp" />
-
     </GridLayout>
 
     <Button
@@ -45,5 +44,4 @@
         android:text="New Game"
         android:layout_marginTop="40dp"
         android:backgroundTint="#4CAF50" />
-
 </LinearLayout>
