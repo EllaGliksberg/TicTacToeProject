@@ -51,10 +51,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         checkWin()
-
-        if (gameActive) {
-            isPlayerX = !isPlayerX
-        }
+        if (gameActive) isPlayerX = !isPlayerX
     }
 
     private fun checkWin() {
@@ -70,17 +67,14 @@ class MainActivity : AppCompatActivity() {
                 return
             }
         }
-
         if (buttons.all { it?.text != "" }) {
             gameActive = false
-            statusText.text = "It's a Draw!"
+            statusText.text = "It's a Draw! 🤝"
         }
     }
 
     private fun resetGame() {
-        for (button in buttons) {
-            button?.text = ""
-        }
+        for (button in buttons) button?.text = ""
         isPlayerX = true
         gameActive = true
         statusText.text = "Player X's Turn"
